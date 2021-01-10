@@ -16,9 +16,9 @@ a {
 
 .navbar {
   background-color: teal;
-  /* position : sticky;
-  top : 0;
-  z-index : 10; */
+  /* position : sticky; */
+  /* top : 0; */
+  z-index : 1000; 
 }
 
 nav {
@@ -241,6 +241,16 @@ ul .links-nav {
   }
   .nav-btn {
     display: none;
+  }
+
+  .container {
+    max-width: 1300px;
+    margin : 0 auto;
+  }
+
+  .inside-container {
+    max-width : 1280px;
+    
   }
 
 
