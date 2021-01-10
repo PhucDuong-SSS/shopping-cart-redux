@@ -1,5 +1,253 @@
 *{
-  margin : 0 auto;
-  padding : 0 auto;
+  margin : 0 ;
+  padding : 0 ;
   box-sizing: border-box;
 }
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* navbar */
+
+.navbar {
+  background-color: teal;
+  /* position : sticky;
+  top : 0;
+  z-index : 10; */
+}
+
+nav {
+  background : teal;
+  max-width : 1200px;
+  margin: 0 auto;
+}
+
+nav .btn-logo {
+  display: flex;
+  justify-content: space-between;
+  background : teal;
+  padding : 10px;
+  align-items : center;
+  border-bottom: 1px solid lightgray;
+  color : white;
+  text-align : center;
+}
+nav .btn-logo:hover {
+  opacity : 0.9;
+}
+
+nav .btn-logo a {
+  display: flex;
+}
+
+
+nav .btn-logo a img {
+  width : 45px;
+  margin-right : 5px; 
+
+}
+
+nav .btn-logo .hamburger {
+  display: inline-block;
+  border: 1px solid white;
+  cursor : pointer;
+}
+
+nav .btn-logo .hamburger .bar {
+  background : lightgray;
+  padding : 1px;
+  width : 35px;
+  height : 3px;
+  margin : 4px;
+}
+
+.links li a {
+  font-size: 18px;
+  color : white;
+  padding : 10px;
+
+}
+
+.links li a:hover {
+  color : lightgray;
+  padding : 10px 20px;
+
+}
+
+.mobile-shopping {
+  position : absolute;
+  display : flex;
+  display: block;
+  align-self: center;
+  position: relative;
+  margin-top: 5px;
+  cursor : pointer;
+
+}
+
+.mobile-shopping span {
+  color : white;
+  position : absolute;
+  top : -10px;
+  left : 9px;
+  background-color : red;
+  border-radius: 50%;
+  width : 20px;
+  text-align : center;
+}
+
+.links-navigation {
+  background : teal;
+  position : fixed;
+  top :0;
+  bottom : 0;
+  transform : translateX(-100%);
+  width : 100%;
+  transition : all 0.5s ease-in-out;
+}
+
+.new-links-navigation {
+  background : teal;
+  position : fixed;
+  top :0;
+  bottom : 0;
+  transform : translateX(0%);
+  width : 100%;
+  transition : all 0.5s ease-in-out;
+}
+
+ul .links-nav {
+}
+
+.links-nav li{
+  text-align : center;
+  padding :20px;
+
+}
+
+.nav-btn {
+  margin: 10px 20px;
+  position : relative;
+  text-align : right;
+  font-size :30px;
+  color : white;
+}
+.nav-btn span {
+  cursor: pointer;
+}
+
+.shopping-cart {
+  display : none;
+}
+
+/* responsive */
+
+@media screen and (min-width:664px){
+  nav .btn-logo .hamburger {
+    display : none;
+  }
+  nav .btn-logo a img {
+    width : 100px;
+    margin : 0px 50px; 
+  
+  }
+  nav .btn-logo {
+    border-bottom : none;
+    padding : 0;
+  }
+  .mobile-shopping {
+    display : none
+  }
+
+  .nav {
+    display : flex;
+    align-items : center;
+    justify-content : space-between;
+    justify-content: flex-end;
+
+    padding : 5px 20px;
+  }
+
+  .links {
+    display : flex;
+    flex : 1;
+  }
+  .links-nav {
+    display : flex;
+    justify-content : flex-end;
+    margin-right: 50px;
+
+  }
+ 
+
+  .links-nav li a {
+    padding : 0;
+    margin-right: 2px;
+    margin-left: 2px;
+  }
+
+  .links-nav li a:hover {
+   color : lightgray;
+   padding : 10px;
+  }
+
+  ul .links-nav {
+    display : flex;
+
+  }
+  
+  .links-navigation {
+    position : relative;
+    transform : translateX(0);
+    flex : 3;
+    /* transition : all 0.5 ease-in-out; */
+  }
+
+
+  .shopping-cart {
+    display : flex;
+    color : white;
+    cursor : pointer;
+    position: relative;
+    font-size : 18px;
+  }
+
+  .shopping-cart  {
+    position : absolute;
+    display : flex;
+    flex: 1;
+    display: block;
+    align-self: center;
+    position: relative;
+    margin-top: 5px;
+    margin-right: 50px;
+  }
+  
+  .shopping-cart  span {
+    color : white;
+    cursor : pointer;
+    position : absolute;
+    top : -10px;
+    left : 9px;
+    background-color : red;
+    border-radius: 50%;
+    width : 20px;
+    text-align : center;
+  }
+  .nav-btn {
+    display: none;
+  }
+
+
+
+}
+
+
+
+
+
